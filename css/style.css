@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1296px;
+    margin: auto;
+}
+
+header, main, footer, p, section, h1, h2, 
+h3, h4, h5, h6, div, nav, span {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header-wrapper {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    height: 39px;
+    margin: 30px 0; */
+}
+
+.header-left, .header-middle, .logins {
+    margin: auto;
+    display: block;
+}
