@@ -9,6 +9,11 @@ h3, h4, h5, h6, div, nav, span {
     font-family: 'Quicksand', sans-serif;
 } 
 
+.title {
+    font-weight: 700;
+    color: #000;
+}
+
 a {
     text-decoration: none;
     color: ;
@@ -86,6 +91,7 @@ a {
     background: #fff;
     padding: 16px 12px 33px 12px;
     box-sizing: border-box;
+    border: none;
 }
 
 .popover li {
@@ -97,7 +103,7 @@ a {
     margin-bottom: 16px;
 }
 
-.popover h4 {
+.popover h5 {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -137,6 +143,7 @@ a {
     width: 294px;
     height: 36px;
     font-family: 'Quicksand', sans-serif;
+    anchor-name: --form-anchor;
 }
 
 .input::placeholder {
@@ -154,8 +161,8 @@ a {
     cursor: pointer;
     border-radius: 0 4px 4px 0;
     position: absolute;
-    top: 1px;
-    right: -36px;
+    top: 2px;
+    right: -35px;
 }
 
 .nav-text {
@@ -173,7 +180,10 @@ a {
 
 .white-button {
     color: #0f8277;
+    border-radius: 4px;
     padding: 10px 12px;
+    font-family: 'Quicksand', sans-serif;
+    
 }
 
 /* main */
@@ -187,10 +197,8 @@ a {
 }
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 120%;
-    color: #000;
     margin-bottom: 32px;
 }
 
@@ -223,6 +231,179 @@ a {
     font-size: 16px;
     line-height: 120%;
     border: 2px solid #0f8277;
-    border-radius: 4px;
     margin-left: 24px;
+}
+
+.cards-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.card-wrapper {
+    margin-top: 80px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #0f8277;
+}
+
+.secondary-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+.title-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+
+.title-margin {
+    margin: 12px 0;
+}
+
+.first-card {
+    width: 416px;
+    height: 480px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.card1-wrapper {
+    width: 384px;
+    margin: auto;
+}
+
+.card1-pic {
+    width: 416px;
+    height: 270px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+    margin: 24px 0 16px 0;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000;
+}
+
+.card-cta {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #0f8277;
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+}
+
+.card-cta::before {
+    content: "";
+    background: url(../images/uni-hat.svg) no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 12px;
+}
+
+.first-uni::before {
+    content: "";
+    background: url(../images/dan-it.svg) no-repeat;
+    background-position: center center;
+    width: 72px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.second-uni::before {
+    content: "";
+    background: url(../images/eu_logo.svg) no-repeat;
+    background-position: center center;
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.third-uni::before {
+    content: "";
+    background: url(../images/logo-prjctr.svg) no-repeat;
+    background-position: center center;
+    width: 46px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.second-card {
+    width: 306px;
+    height: 480px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.card2-wrapper {
+    width: 274px;
+    margin: auto;
+}
+
+.card2-pic {
+    width: 306px;
+    height: 270px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card2-cta {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #0f8277;
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.card-link::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/green-arrow.svg) no-repeat;
+    background-position: center center;
+    vertical-align: bottom;
+    margin-left: 16px;
 }
