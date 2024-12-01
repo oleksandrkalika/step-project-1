@@ -4,25 +4,225 @@
     box-sizing: border-box;
 }
 
+header, main, footer, p, section, h1, h2, 
+h3, h4, h5, h6, div, nav, span {
+    font-family: 'Quicksand', sans-serif;
+} 
+
+a {
+    text-decoration: none;
+    color: ;
+}
+
 .wrapper {
     width: 1296px;
     margin: auto;
 }
 
-header, main, footer, p, section, h1, h2, 
-h3, h4, h5, h6, div, nav, span {
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 31px;
+}
+
+.header-wrapper > button, form, li, h1 {
+    display: inline-block;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #000;
+}
+
+.green-button {
+    border-radius: 4px;
+    padding: 10px 12px;
+    background-color: #0F8277;
+    font-family: 'Quicksand', sans-serif;
+    color: #eee;
+    }
+
+.explore::after {
+    background: url(../images/arrow.svg) no-repeat;
+    background-position: center center;
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 12px;
+}
+
+.explore {
+    padding-right: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 98px;
+    height: 39px;
+    anchor-name: --anchor;
+}
+
+[popover] {
+    inset: auto;
+    overflow: visible;
+    position-anchor: --anchor;
+    top: anchor(bottom);
+    left: anchor(left);
+}
+
+.popover {
+    height: 558px;
+    width: 384px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    padding: 16px 12px 33px 12px;
+    box-sizing: border-box;
+}
+
+.popover li {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.popover h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.pseudo-popover {
+    position: relative;
+}
+
+.pseudo-popover::before {
+    content: "";
+    width: 360px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: -40px;
+}
+
+.header-left {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+    position: relative;
+}
+
+.input {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+    border: 1px solid #5c5c5c;
+    border-radius: 4px 0 0 4px;
+    padding: 0px 0px 0px 12px;
+    width: 294px;
+    height: 36px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.header-wrapper {
-    display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
-    height: 39px;
-    margin: 30px 0; */
+.input::placeholder {
+    color: #5c5c5c;
 }
 
-.header-left, .header-middle, .logins {
-    margin: auto;
-    display: block;
+.mag-glass {
+    background: url(../images/magnifying-glass.svg) no-repeat;
+    background-position: center center;
+    background-color: #0f8277;
+    border: 1px solid #5c5c5c;
+    border-radius: ;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    top: 1px;
+    right: -36px;
+}
+
+.nav-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+}
+
+.nav-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.white-button {
+    color: #0f8277;
+    padding: 10px 12px;
+}
+
+/* main */
+
+.learn-comf {
+    height: 602px;
+    background: #dbf3ed;
+    display: flex;
+    align-items: center;
+    gap: 94px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 42px;
+    max-width: 482px;
+}
+
+.hero-container {
+    margin: 170px 0 184px 110px;
+}
+
+.hero-image {
+    width: 526px;
+    height: 533px;
+}
+
+.hero-button1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.hero-button2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    border: 2px solid #0f8277;
+    border-radius: 4px;
+    margin-left: 24px;
 }

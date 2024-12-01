@@ -12,23 +12,57 @@
     <header class="wrapper header-wrapper">
         <div class="header-left">
             <a href="">
-                <h1 class="maint-title">e-Tutoria</h1>
+                <h1 class="main-title">e-Tutoria</h1>
             </a>
-            <button class="explore">Explore</button>
-            <form action="">
-                <input type="text" name="" placeholder="What do yo want to learn?">
+            <button popovertarget="popover-menu" class="explore green-button">Explore</button>
+            <div popover id="popover-menu" class="popover">
+                <ul>
+                    <a href="#"><li>Courses</li></a>
+                    <a href="#"><li style="padding-bottom: 40px;">Corporate training</li></a>
+                </ul>
+                <ul>
+                    <li><h4 class="pseudo-popover">Goals</h4></li>
+                    <a href="#"><li>Take a free course</li></a>
+                    <a href="#"><li>Get a diploma</li></a>
+                    <a href="#"><li>Get a certificate</li></a>
+                    <a href="#"><li>Get a new profession</li></a>
+                </ul>
+                <ul>
+                    <li><h4>Themes</h4></li>
+                    <a href="#"><li>Data science</li></a>
+                    <a href="#"><li>Business</li></a>
+                    <a href="#"><li>Computer science</li></a>
+                    <a href="#"><li>Information Technology</li></a>
+                </ul>
+            </div>
+            <form>
+                <input type="text" class="input" name="" placeholder="What do you want to learn?">
+                <input type="submit" value="" class="mag-glass">
             </form>
         </div>
         <nav class="header-middle">
             <ul>
-                <li>Courses</li>
-                <li>Corporate training</li>
+                <a href=""><li class="nav-text" style="margin-right: 48px;">Courses</li></a>
+                <a href=""><li class="nav-text">Corporate training</li></a>
             </ul>
         </nav>
         <div class="logins">
-            <a href="" class="button">Log in</a>
-            <a href="" class="button">Sign up</a>
+            <a href="" class="white-button nav-button" style="margin-right: 16px;">Log in</a>
+            <a href="" class="green-button nav-button">Sign up</a>
         </div>
     </header>
+
+    <main>
+        <section class="wrapper learn-comf">
+            <div class="hero-container">
+                <h2 class="hero-title">Learn comfortably</h2>
+                <p class="hero-text">Unlimited access to 700+ courses, hands-on projects, and certifications in job-critical skills in one subscription</p>
+                <a class="green-button hero-button1" href="#">Start learning</a>
+                <a class="white-button hero-button2" href="#">Learn more</a>  
+            </div>
+             <img src="./images/polygon-picture.png" alt="Student" class="hero-image">
+        </section>
+    </main>
+
 </body>
 </html>
