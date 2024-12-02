@@ -92,16 +92,14 @@ a {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 0px;
-    transform: translate(0, 10px);
 }
 
 .popover-wrapper:hover .popover {
     z-index: 10;
     opacity: 1;
     visibility: visible;
-    transform: translate(0, -20px);
     transition: all .25s ease-in-out
   }
 
