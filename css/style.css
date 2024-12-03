@@ -505,6 +505,144 @@ section.flex-section {
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
+    column-gap: 1px solid #bababa;
+    row-gap: 1px;
 }
 
+.grid-brands > img {
+    width: 196px;
+    height: 136px;
+    object-fit: none;
+}
 
+.right {
+    border-right: 1px solid #bababa;
+}
+
+.bottom {
+    border-bottom: 1px solid #bababa;
+}
+
+.prices-wrapper {
+    text-align: center;
+    padding: 80px 0 40px 0;
+}
+
+.prices-wrapper > div {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.price-card {
+    width: 416px;
+    height: 698px;
+    border: 1px solid #0f8277;
+    border-radius: 24px;
+    padding: 56px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.whitish{
+    background-color: #fff;
+    color: #000;
+    font-family: "Quicksand", sans-serif;
+}
+
+.greenish {
+    background: #0f8277;
+    color: #fff;
+}
+
+h4.greenish, p.greenish, span.greenish {
+    color: #fff;
+}
+
+a.greenish {
+    border: 2px solid #fff;
+}
+
+.green-pseudo::before {
+    content: "";
+    position: absolute;
+    border-radius: 80px;
+    width: 304px;
+    height: 2px;
+    background: #fff;
+    top: 88px;
+    left: -85px;
+    z-index: 10;
+}
+
+.pseudo-check::before {
+    content: "";
+    background: url(../images/whitecheck.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 16px;
+    position: absolute;
+    left: -32px;
+    z-index: 3;
+}
+
+.price-content {
+    margin: 27px 0;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+    align-self: center;
+    margin-left: 16px;
+    vertical-align: 8px;
+}
+
+.price-btn {
+    position: absolute;
+    left: 143px;
+    top: 290px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: #f6fdff;
+}
+
+.price-btn::after {
+    content: "";
+    position: absolute;
+    border-radius: 80px;
+    width: 304px;
+    height: 2px;
+    background: #0f8277;
+    top: 88px;
+    left: -85px;
+}
+
+.price-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: start;
+    max-width: 264px;
+}
+
+ul.price-list {
+    position: absolute;
+    top: 440px;
+    left: 88px;
+}
+
+li.price-list::before {
+    content: "";
+    background: url(../images/greencheck.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 16px;
+    position: absolute;
+    left: -32px;
+}
