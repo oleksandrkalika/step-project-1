@@ -49,6 +49,7 @@ a {
     background-color: #0F8277;
     font-family: 'Quicksand', sans-serif;
     color: #eee;
+    box-sizing: border-box;
     }
 
 .explore::after {
@@ -442,3 +443,68 @@ p.flex-section {
     line-height: 120%;
     color: #000;
 }
+
+.full-width {
+    width: 100%;
+}
+
+.green {
+    background-color: #DBF3ED;
+}
+
+.align-wrapper {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.uni-section {
+    width: 871px;
+    display: inline-block;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.uni-image {
+    object-fit: none;
+}
+
+.flex-grid {
+    height: 412px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.left-grid {
+    max-width: 636px;
+}
+
+.left-grid > h2 {
+    padding-top: 67px;
+    padding-bottom: 32px;
+}
+
+.content-text {
+    padding-bottom: 42px;
+    max-width: 568px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000;
+}
+
+section.flex-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-brands {
+    width: 588px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
