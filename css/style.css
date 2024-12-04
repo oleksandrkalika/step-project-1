@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -723,16 +727,12 @@ li.price-list::before {
     background: #dbf3ed;
     position: absolute;
     top: 65px;
-    left: 557px;
+    left: 33.2%;
 }
 
 .login-form > h2, 
 .login-form > p {
     text-align: center;
-}
-
-.login-form > form:not {
-    margin: auto;
 }
 
 .form-text {
