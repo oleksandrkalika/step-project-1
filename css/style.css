@@ -160,6 +160,11 @@ a {
     anchor-name: --form-anchor;
 }
 
+.input:focus {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
+    outline: none;
+}
+
 .input::placeholder {
     color: #5c5c5c;
 }
@@ -726,8 +731,9 @@ li.price-list::before {
     height: 614px;
     background: #dbf3ed;
     position: absolute;
-    top: 65px;
-    left: 33.2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login-form > h2, 
@@ -789,6 +795,12 @@ li.price-list::before {
     font-size: 16px;
     line-height: 150%;
     color: #8e8e8e;
+}
+
+.section-inputs > input:focus,
+.section-inputs > textarea:focus {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
+    outline: none;
 }
 
 .section-inputs > label {
